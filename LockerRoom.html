@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>MarketPlace</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.container {
+  position: relative;
+  width: 20%;
+  float: left;
+}
+
+.container2 {
+  position: relative;
+  width: 10%;
+  height: 5%;
+  float: left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #4411bb;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.text2 {
+  color: white;
+  font-family: monospace, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.text3 {
+  color: white;
+  font-family: monospace, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.text4 {
+  color: white;
+  font-family: monospace, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+h1 {text-align: center;}
+
+img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+    font-family: monospace, sans-serif;
+    background-image: url('locker.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="MarketSpace.html">NFT Marketplace</a>
+        <a href="LockerRoom.html">My Locker</a>
+        <a href="play.html">Fight</a>
+      </div>
+      
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+<h1 style="font-size:80px;"><b>My Locker</b></h1>
+
+<img src="lollers.png" class="container2">
+
+<div class="container">
+    <img src="mantis_blades.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Mantis Blades ~ Worth: Ξ 0.05</div>
+      <div class="text2">Originally used to climb cliffs,</div>
+      <div class="text3">Mantis Blades have proven to be</div>
+      <div class="text4">great for kebabs. - Shawarma Guru</div>
+    </div>
+  </div>
+  
+  <img src="lollers.png" class="container2">
+  
+  <div class="container">
+    <img src="monowire.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Monowire ~ Worth: Ξ 0.03</div>
+      <div class="text2">Acording to legend, the</div>
+      <div class="text3">inventor got his main inspiration</div>
+      <div class="text4">from a spaghetti dinner. </div>
+    </div>
+  </div>
+  
+  <img src="lollers.png" class="container2">
+  
+  <div class="container">
+    <img src="projectile_launcher.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Projectile Launcher ~ Ξ 0.01</div>
+      <div class="text2">Developed in a lab by high-tech</div>
+      <div class="text3">scientists trying to channel</div>
+      <div class="text4">their inner Iron Man. </div>
+    </div>
+  </div>
+
+</body>
+</html>
